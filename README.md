@@ -105,26 +105,44 @@ We can refer the element with an index number. ie., can refer them as first elem
    |  __hash__ = None
   ```
 
-  ```
-  Usage:
-  p1 = RegConvexPolygon(4, 2)
-  
-  print(p1.num_vertices)
-  print(p1.circumradius)
-  print(p1.edge_length)
-  print(p1.interior_angle)
-  print(p1.apothem)
-  print(p1.area)
-  print(p1.perimeter)
-  
-  4
-  2
-  2.82842712474619
-  90.0
-  1.4142135623730951
-  8.0
-  11.31370849898476
-  ```
+  *  Usage
+
+    ```
+    p1 = RegConvexPolygon(4, 2)
+    
+    print(p1.num_vertices)
+    print(p1.circumradius)
+    print(p1.edge_length)
+    print(p1.interior_angle)
+    print(p1.apothem)
+    print(p1.area)
+    print(p1.perimeter)
+    
+    4
+    2
+    2.82842712474619
+    90.0
+    1.4142135623730951
+    8.0
+    11.31370849898476
+    ```
+
+    
+
+    ```
+    p1 = RegConvexPolygon(10, 4)
+    p2 = RegConvexPolygon(10, 4)
+    p3 = RegConvexPolygon(100, 2)
+    p4 = RegConvexPolygon(2, 100)
+    p5 = RegConvexPolygon(10, 2)
+    
+    assert p1 == p2
+    assert p1 != p5
+    assert p3 > p4
+    assert p3 > p2
+    ```
+
+    
 
   
 
@@ -177,7 +195,7 @@ We can refer the element with an index number. ie., can refer them as first elem
 
 ---
 
-### Results
+
 
 
 
